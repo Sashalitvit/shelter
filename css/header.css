@@ -1,0 +1,49 @@
+header{
+    height: 120px;
+    padding: 4.6875% 3.125% 0;
+    display: flex;
+    justify-content: space-between;
+    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+.logo {
+    width: 184px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.logo-title {
+    width: 184px;
+    height: 35px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+.logo-subtitle {
+    width: 179px;
+    height: 15px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav ul{
+    width: 443px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a{
+    color: #CDCDCD;
+}

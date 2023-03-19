@@ -1,0 +1,38 @@
+/* section ABOUT*/
+
+.about{
+    height: 588px;
+}
+.about-content{
+    width: 100%;
+    height: 408px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.about-pets{
+    max-width: 308px;
+    width: 100%;
+    height: 408px;
+    background-image: url(../main/assets/img/about-pets.jpg);
+}
+.content-text{
+    max-width: 430px;
+    height: 380px;
+}
+.heading-about{
+    width: 370px;
+    height: 90px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.heading-about-mini{
+    width: 430px;
+    height: 96px;
+    color: #4C4C4C;
+}
+.heading-about-big{
+    width: 430px;
+    height: 144px;
+    color: #4C4C4C;
+}
