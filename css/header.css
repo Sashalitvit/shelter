@@ -1,16 +1,25 @@
 header{
-    height: 120px;
-    padding: 4.6875% 3.125% 0;
+    height: 120px;    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+.container-logo{
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
-    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    align-items: center;
 }
 .logo {
     width: 184px;
     height: 60px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 .logo-title {
     width: 184px;
@@ -22,8 +31,10 @@ header{
     line-height: 110%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    margin-bottom: 10px;
+    white-space: nowrap; /* запрет на перенос*/
 }
-.logo-subtitle {
+.logo-subtitile {
     width: 179px;
     height: 15px;
     font-family: 'Arial';
@@ -34,6 +45,7 @@ header{
     letter-spacing: 0.1em;
     color: #FFFFFF;
     text-align: center;
+    white-space: nowrap;
 }
 
 nav ul{

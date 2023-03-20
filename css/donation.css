@@ -9,7 +9,9 @@
     width: 100%;
     height: 282px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+   /* margin: 80px, 182px, 100px, 183px;*/
+   margin: auto;
 }
 .donate-dog{
     width: 505px;
@@ -19,45 +21,56 @@
 .donate-info{
     max-width: 380px;
     height: 282px;
+    margin-left: 30px;
 }
 .donate-h3{
     max-width: 300px;
     height: 90px;
     letter-spacing: 0.06em;
     color: #545454;
+    margin-bottom: 20px;
 }
 .bank-name{
     max-width: 307px;
     height: 17px;
     letter-spacing: 0.06em;
     color: #545454;
+    margin-bottom: 10px;
 }
 .credit-card-cont{
     max-width: 349px;
     height: 43px;
     background: #F1CDB3;
     border-radius: 9px;
-    margin: auto;
+    margin-top: 20px;
 }
 .card-cont-mini{
     width: 319px;
     height: 23px;
+    display: flex;
+    justify-content:center;
+
+
 }
-.card{
+.card-cont-mini .card{
     width: 30px;
     height: 23px;
-    background-image: url(../assets/svg/credit-card.svg);
+    background-image: url(../main/assets/svg/credit-card.svg);
 }
 .number-card{
     max-width: 274px;
     height: 23px;
     letter-spacing: 0.06em;
     color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
 }
 .card-text{
     max-width: 380px;
     height: 72px;
     align-items: center;
     color: #B2B2B2;
-
+    margin-top: 20px ;
 }

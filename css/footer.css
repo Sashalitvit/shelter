@@ -8,11 +8,14 @@
     max-width: 1200px;
     height: 310px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 .contacts-footer{
     width: 278px;
     height: 234px;
+    display: flex;
+    flex-direction: column;
 }
 .questionsH3{
     width: 278px;
@@ -20,10 +23,16 @@
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
 }
 .email-container{
     width: 251px;
     height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 .email-icon{
     width: 40px;
@@ -34,9 +43,29 @@
     width: 191px;
     height: 23px;
 }
+.phone-container{
+    width: 239px;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.phone-icon{
+    width: 40px;
+    height: 32px;
+    background-image: url(../main/assets/svg/icon-phone.svg);
+}
+.phone{
+    width: 179px;
+    height: 23px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
 .location-footer{
     max-width: 302px;
     height: 234px;
+    display: flex;
+    flex-direction: column;
 }
 .locationH3{
     width: 270px;
@@ -48,11 +77,17 @@
 .containerFirstAdress{
     width: 302px;
     height: 46px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+
 }
 .icon-marker{
     width: 22px;
     height: 32px;
     background-image: url(../main/assets/svg/icon-marker.png);
+    margin-right: 20px;
 }
 .text-first-adress{
     width: 290px;
@@ -65,4 +100,5 @@
     width: 300px;
     height: 310px;
     background-image:url(../main/assets/img/footer-puppy.svg);
+    align-self: flex-end;
 }
