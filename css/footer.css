@@ -1,104 +1,113 @@
 /* FOOTER*/
 
-.footer{
+footer{
     height: 350px;
-    background: url(../main/assets/svg/footer-background.svg);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-image: url(../../shelter-task/main/assets/svg/footer-background.png);
 }
-.footer-content{
-    max-width: 1200px;
+.footer-contant {
+    width: 1200px;
     height: 310px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
 }
-.contacts-footer{
-    width: 278px;
-    height: 234px;
+.contacts, .locations {
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
-.questionsH3{
+.contacts {
     width: 278px;
-    height: 90px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    margin-bottom: 45px;
+    height: 234px;
 }
-.email-container{
+.contacts h3{
+    width: 288px; /* проверить размер */
+    height: 90px;
+    color: #FFFFFF;
+}
+.mail {
     width: 251px;
     height: 32px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    align-items: center;
 }
-.email-icon{
-    width: 40px;
-    height: 32px;
-    background-image: url(../main/assets/svg/icon-email.svg);
-}
-.email{
-    width: 191px;
-    height: 23px;
-}
-.phone-container{
+
+.phone {
     width: 239px;
-    width: 100%;
     height: 32px;
-    display: flex;
-    justify-content: space-between;
-}
-.phone-icon{
-    width: 40px;
-    height: 32px;
-    background-image: url(../main/assets/svg/icon-phone.svg);
-}
-.phone{
-    width: 179px;
-    height: 23px;
-    margin-right: 20px;
-    white-space: nowrap;
-}
-.location-footer{
-    max-width: 302px;
-    height: 234px;
-    display: flex;
-    flex-direction: column;
-}
-.locationH3{
-    width: 270px;
-    height: 90px;
-    line-height: 130%;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
-.containerFirstAdress{
-    width: 302px;
-    height: 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 33px;
-
 }
-.icon-marker{
-    width: 22px;
+.mail .icon,
+.phone .icon {
+    width: 40px;
     height: 32px;
-    background-image: url(../main/assets/svg/icon-marker.png);
-    margin-right: 20px;
 }
-.text-first-adress{
-    width: 290px;
-    height: 46px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
+.mail .icon{
+    background-image: url(../../shelter-task/main/assets/svg/icon-email.svg);
+}
+.phone .icon{
+    background-image: url(../../shelter-task/main/assets/svg/icon-phone.svg);
+}
+.mail h4{
+    width: 191px;
+    height: 23px;
     color: #F1CDB3;
 }
-.animal-picture{
+.phone h4{
+    width: 179px;
+    height: 23px;
+    color: #F1CDB3;
+    white-space: nowrap;
+}
+.locations {
+    width: 302px;
+    height: 234px;
+}
+.locations h3{
+    width: 270px;
+    height: 90px;
+    color: #FFFFFF;
+}
+.town-1{
+    width: 302px;
+    height: 46px;
+}
+.town-1 h4{
+    width: 260px;
+    height: 46px;
+    white-space: nowrap;
+}
+.town-2{
+    width: 302px;
+    height: 32px;
+}
+.town-2 h4{
+    width: 260px;
+    height: 23px;
+}
+.town{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.town .icon{
+    width: 22px;
+    height: 32px;
+    background-image: url(../../shelter-task/main/assets/svg/icon-marker.png);
+
+}
+.town h4{
+    color: #F1CDB3;
+}
+.footer-puppy {
     width: 300px;
     height: 310px;
-    background-image:url(../main/assets/img/footer-puppy.svg);
-    align-self: flex-end;
+    background-image: url(../../shelter-task/main/assets/img/footer-puppy.svg);
 }

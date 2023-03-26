@@ -5,7 +5,8 @@
     padding: 4.6875% 3.125% 0;
     display: flex;
     justify-content: space-between;
-    background: url(../main/assets/svg/start-screen-background.svg);
+    background: url(../main/assets/img/start-screen-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;    
+    background-position: 0 --120px;
 }
 .start-screen-content{
     width: 100%;
@@ -44,7 +45,7 @@
     align-items: center;
     color: #CDCDCD;
 }
-.button_primary{
+.button-primary{
     width: 207px;
     height: 52px;
     background: #F1CDB3;

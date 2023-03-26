@@ -62,3 +62,10 @@
     width: 261px;
     height: 52px;
 }
+/*hover*/
+.slider .card:hover {
+    cursor: pointer;
+}
+.slider .card:hover > .button-secondary{
+    background: #fddcc4;
+}

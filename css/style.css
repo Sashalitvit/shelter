@@ -8,7 +8,10 @@
 @import url(./donation.css);
 @import url(./footer.css);
 
-
+html{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
 
 

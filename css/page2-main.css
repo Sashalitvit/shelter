@@ -21,8 +21,15 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
+.pets-content h1{
+    width: 400px;
+    height: 90px;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
 .pets-content h3{
     width: 400px;
     height: 90px;
@@ -78,6 +85,9 @@ header{
     width: 340px;
     height: 52px;
 }
-.cards_container .card .button-secondary{
-    background-color: transparent;
+.cards_container .card:hover {
+    cursor: pointer;
+}
+.cards_container  .card:hover > .button-secondary{
+    background: #fddcc4;
 }
