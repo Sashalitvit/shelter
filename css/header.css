@@ -3,8 +3,9 @@ header{
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;    
-    background: url(../main/assets/img/start-screen-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;    
+    align-items: flex-end;
+    background: url(.//../main/assets/svg/start-screen-background.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    background: url(../main/assets/img/start-screen-background.jpg)
 }
 .container-logo{
     max-width: 1200px;
@@ -48,15 +49,42 @@ header{
     text-align: center;
     white-space: nowrap;
 }
-
 nav ul{
     width: 443px;
-    height: 27px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav ul li a{
+nav ul li a.paragraph-l{
     color: #CDCDCD;
+}
+
+nav ul li a{
+    position: relative;
+    color: #CDCDCD;
+}
+
+nav ul li a:active::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;
+    background: #F1CDB3;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li:nth-child(1) a::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    left: 0%;
+    height: 3px;
+    background: #F1CDB3;
+    width: 100%;
+}
+nav ul li:hover a{
+    color:#FFFFFF;
 }

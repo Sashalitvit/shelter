@@ -53,7 +53,6 @@ header, main, footer{
     width: 100%;
     margin: auto;
 }
-
 .button-primary, .button-secondary{
     font-family: 'Georgia';
     font-style: normal;
@@ -74,7 +73,7 @@ header, main, footer{
 }
 .button-primary:hover{
     background: #FDDCC4;
-    
+
 }
 .button-secondary{
     border: 2px solid #F1CDB3;
@@ -99,4 +98,7 @@ header, main, footer{
 }
 .button-arrow:hover{
     background: #FDDCC4;
+    background-image: url(../svg/Arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
