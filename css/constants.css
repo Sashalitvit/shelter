@@ -92,13 +92,13 @@ header, main, footer{
     border: 2px solid #F1CDB3;
     border-radius: 100px;
     background: none;
-    background-image: url(../svg/Arrow.svg);
+    background-image: url(../main/assets/svg/Arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 .button-arrow:hover{
     background: #FDDCC4;
-    background-image: url(../svg/Arrow.svg);
+    background-image: url(../main/assets/svg/Arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
