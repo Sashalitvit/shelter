@@ -102,3 +102,38 @@ header, main, footer{
     background-position: center;
     background-repeat: no-repeat;
 }
+.button-pagination-inactive{
+    width: 52px;
+    height: 52px;
+    background: none;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    color: #CDCDCD;
+}
+.button-pagination-active{
+    width: 52px;
+    height: 52px;
+    background: #F1CDB3;
+    border: none;
+    border-radius: 100px;
+    color: #292929;
+}
+.button-pagination{
+    width: 52px;
+    height: 52px;
+    background: none;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+}
+.button-pagination-inactive,
+.button-pagination-active,
+.button-pagination{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
