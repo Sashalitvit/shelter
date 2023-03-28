@@ -88,3 +88,6 @@ nav ul li:nth-child(1) a::after{
 nav ul li:hover a{
     color:#FFFFFF;
 }
+@media(min-width:768px) and (max-width:1278px){
+
+}
