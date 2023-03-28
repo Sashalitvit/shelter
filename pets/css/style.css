@@ -1,0 +1,9 @@
+@import url(../../css/reset.css);
+@import url(../../css/constants.css);
+@import url(../../css/header.css);
+@import url(../../css/footer.css);
+@import url(../../css/page2-main.css);
+
+nav ul li:hover a{
+    color: #080808;
+}
