@@ -69,3 +69,22 @@
 .slider .card:hover > .button-secondary{
     background: #fddcc4;
 }
+
+/* Media */
+@media(max-width: 1281px){
+    .pets{
+         padding-top: calc(100%*80/768);
+    }
+    .pets-contant{
+         max-width: 708px;
+         width: 100%;
+         height: 697px;
+    }
+    .slider{
+         width: 708px;
+         height: 435px;
+    }
+    .slider .card:nth-child(4){
+         display: none;
+    }
+ }
