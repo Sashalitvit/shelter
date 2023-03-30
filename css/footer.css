@@ -111,3 +111,23 @@ footer{
     height: 310px;
     background-image: url(../../shelter-task/main/assets/img/footer-puppy.svg);
 }
+
+@media (max-width: 769px){
+    footer,
+    .footer-contant{
+        max-width:768px;
+        width: 100%;
+        height: 639px;
+    }
+    .footer-contant{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+    }
+    .contacts,
+    .locations{
+        padding-top: calc(100%*30/768);
+        flex-basis: 40%;
+    }
+}
