@@ -90,3 +90,36 @@
         align-items: center;
     }
 }
+@media (max-width: 321px){
+    .startScreen{
+     width: 320px;
+     height: 733px;
+     padding-top: calc(100%*60/320);
+    }
+     .star-screen-puppy{
+         width: 260px;
+         height: 271.77px;
+         background-image: url(../../shelter-task/main/assets/img/start-screen-puppy320.png);
+         background-repeat: no-repeat;/*d+*/
+     }
+     .content{
+         width: 300px;
+         height: 296px;/*d+*/
+     }
+     .heading{
+         width: 230px;
+         height: 64px;
+         font-size: 25px;
+         align-items: center;
+        text-align: center;
+     }
+    .subheading{
+     width: 300px;
+     height: 96px;/*d+*/
+    }
+
+    .start-screen-content{
+     width: 300px;
+     height: 673px;
+    }
+ }

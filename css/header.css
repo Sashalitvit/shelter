@@ -104,3 +104,28 @@ nav ul li:hover a{
         width: 100%;
     }
 }
+@media (max-width: 321px){
+
+    header{
+        padding: calc(100%*30/320) calc(100%*53/320) 0 calc(100%*10/320);
+        position: relative;
+        overflow-y: hidden;
+    }
+    nav{
+        position: fixed;
+        left: 320px;
+    }
+    .burger{
+        display: block;
+        width: 30px;
+        height: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .burger .line{
+        width: 30px;
+        height: 0px;
+        border: 1px solid #F1CDB3;
+    }
+}

@@ -88,3 +88,37 @@
          display: none;
     }
  }
+ @media(max-width: 321px){
+    .pets{
+        height: 791px;
+        padding: 0;
+    }
+    .pets-contant{
+        height: 707px;
+        justify-content: space-between;
+    }
+    .pets-contant h3{
+        width: 300px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .slider{
+        flex-wrap: wrap;
+        width: 270px;
+        height: 507px;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+    .slider .card:nth-child(3) {
+        display: none;
+    }
+    .slider .card:nth-child(2){
+        order: -1;
+        flex-basis: 100%;
+    }
+    .card{
+        justify-content: flex-start;
+        row-gap: 30px;
+    }
+}
