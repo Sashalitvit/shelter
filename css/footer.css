@@ -131,3 +131,53 @@ footer{
         flex-basis: 40%;
     }
 }
+@media (max-width: 321px){
+    footer{
+        height: 809px;
+        padding-top: calc(100%*30/320);
+        align-items: flex-start;
+        background-image: url(../../shelter-task/main/assets/svg/footer-background320px.png);
+        background: url(../../shelter-task/main/assets/svg/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+    }
+    .footer-contant{
+        height: 779px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .contacts,
+    .locations{
+        flex-basis: 100%;
+    }
+    .contacts{
+        padding: 0;
+        width: 278px;
+        max-height: 208px;
+        align-items: center;
+    }
+    .contacts h3{
+        width: 278px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .locations {
+        width: 300px;
+        max-height: 222px;
+        align-items: center;
+    }
+    .locations h3{
+        width: 270px;
+        height: 64px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .footer-puppy{
+        width: 260px;
+        height: 269px;
+        background-image: url(../../shelter-task/main/assets/img/footer-puppy320.png);
+    }
+
+}

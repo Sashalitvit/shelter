@@ -91,3 +91,70 @@
         order: 2;
     }
 }
+@media (max-width: 321px){
+    .donate,
+    .donate-content{
+        height: 542.2px;
+        justify-content: space-between;
+    }
+    .contant{
+        max-width: 300px;
+        height: 281px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .donate-h3{
+        width: 210px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .bank-name{
+        flex: 0;
+        width: 273px;
+        height: 24px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .donate .donate-content .card-text {
+        flex: 0;
+        width: 280px;
+        height: 90px;
+        font-size: 11px;
+    }
+    .card-cont-mini{
+        width: 281px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .number-card{
+        width: 206px;
+        height: 17px;
+        font-size: 15px;
+    }
+    .card-text{
+        width: 273px;
+        height: 24px;
+        font-size: 15px;
+    }
+    .donate-dog{
+        width: 260px;
+        height: 135.2px;
+        background-image: url(../../shelter-task/main/assets/img/donation-dog320.png);
+    }
+    .donate-content,
+    .donate-info,
+    .donate-h3,
+    .bank-name,
+    .credit-card-cont,
+    .card-text{
+        margin: 0;
+    }
+    .donate-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
