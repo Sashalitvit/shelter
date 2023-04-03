@@ -118,3 +118,34 @@ header{
         display: none;
     }
 }
+@media (max-width: 320px){
+    .pets{
+        min-height: 1649px;
+        padding: 0;
+        align-items: center;
+    }
+    .pets-content{
+        max-width: 300px;
+        min-height: 1565px;
+    }
+    .pets-content h1{
+        font-size: 25px;
+        width: 300px;
+        height: 64px;
+        text-align: center;
+    }
+    .card:nth-child(4),
+    .card:nth-child(5),
+    .card:nth-child(6){
+        display: none;
+    }
+    .cards_container{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation{
+        width: 300px;
+        height: 52px;
+    }
+}
