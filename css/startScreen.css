@@ -60,7 +60,7 @@
 }
 
 /*media*/
-@media(max-width: 1200px){
+@media (max-width: 1200px){
     .startScreen{
         height: 1075px;
     }
@@ -90,7 +90,7 @@
         align-items: center;
     }
 }
-@media (max-width: 321px){
+@media (max-width: 600px){
     .startScreen{
      width: 320px;
      height: 733px;

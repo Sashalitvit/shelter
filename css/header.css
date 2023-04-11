@@ -6,6 +6,9 @@ header{
     background: url(.//../main/assets/svg/start-screen-background.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
     background: url(../main/assets/img/start-screen-background.jpg);
 }
+a {
+    color: #F1CDB3;
+}
 .header-container{
     max-width: 1200px;
     width: 100%;
@@ -49,9 +52,6 @@ header{
     text-align: center;
     white-space: nowrap;
 }
-nav{
-    margin-left: auto;
-}
 nav ul{
     width: 443px;
     height: 60px;
@@ -66,7 +66,6 @@ nav ul li a.paragraph-l{
 
 nav ul li a{
     position: relative;
-    color: #CDCDCD;
 }
 
 nav ul li a:active::after{
@@ -91,6 +90,23 @@ nav ul li:nth-child(1) a::after{
 nav ul li:hover a{
     color:#FFFFFF;
 }
+
+.burger{
+    display: none;
+    width: 30px;
+    height: 22px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-around;
+}
+.burger .line{
+    width: 30px;
+    height: 0px;
+    border: 1px solid #F1CDB3;
+}
+input{
+    display: none;
+}
 /*media*/
 @media (max-width: 1280px){
     header{
@@ -106,31 +122,78 @@ nav ul li:hover a{
         max-width: 706px;
         width: 100%;
     }
+    #menu__toggle:checked ~ nav::before{
+        position: fixed;
+        top:0;
+        z-index: 0;
+        content: '';
+        width: 100vw;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        transform: translateX(-100%);
+        transition: 0.5s ease-in-out;
+        left:320px;
+    }
 }
 @media (max-width: 321px){
 
     header{
         padding: calc(100%*30/320) calc(100%*50/320) calc(100%*30/320) calc(100%*10/320);
         position: relative;
-        overflow-y: hidden;
-        justify-content: space-between;
+       /* overflow-y: hidden;*/
         align-items: center;
     }
+    .logo,
+    .burger{
+        position: relative;
+        z-index: 10;
+
+    }
+
     nav{
         position: fixed;
-        left: 320px;
+        left: 100vw;
+        top: 0;
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #292929;
+        z-index: 1;
+        transition: 0.5 ease-in-out;
+    }
+    nav ul{  /*тут криво*/
+        width: 243px;
+        height: 327px;
+        flex-direction: column;
+
+
+    }
+
+    nav ul li a.paragraph-1{
+        font-size: 32px;
+    }
+    nav ul li:nth-child(1) a.paragraph-1{
+        color: #fafafa;
+    }
+    .header-container{
+        width: 260px;
+        height: 60px;
     }
     .burger{
-        display: block;
-        width: 30px;
-        height: 22px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        transition: 0.5s ease-in-out;
     }
-    .burger .line{
-        width: 30px;
-        height: 0px;
-        border: 1px solid #F1CDB3;
+    #menu__toggle:checked ~ nav{
+        left: 0;
+        transition: 0.5s ease-in-out;
+        position: fixed;
     }
+    #menu__toggle:checked + label{
+        transform: rotateZ(90deg);
+        transition: 0.5s ease-in-out;
+    }
+
+
 }

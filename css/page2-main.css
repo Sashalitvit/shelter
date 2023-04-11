@@ -95,7 +95,7 @@ header{
     background: #fddcc4;
 }
 
-@media (max-width: 769px){
+@media (max-width: 1200px){
     .pets{
         max-width: 768px;
         width: 100%;
@@ -118,7 +118,7 @@ header{
         display: none;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 600px){
     .pets{
         min-height: 1649px;
         padding: 0;

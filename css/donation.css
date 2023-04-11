@@ -75,7 +75,7 @@
     margin-top: 20px ;
 }
 
-@media (max-width: 769px){
+@media (max-width: 900px){
     .donation,
     .donate-content{
         max-width: 768px;
@@ -91,7 +91,7 @@
         order: 2;
     }
 }
-@media (max-width: 321px){
+@media (max-width: 510px){
     .donate,
     .donate-content{
         height: 542.2px;

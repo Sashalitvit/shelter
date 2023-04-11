@@ -102,7 +102,7 @@
     background-image: url(../main/assets/svg/icon-sleeping-area.svg);
 }
 
-@media (max-width: 769px){
+@media (max-width: 1045px){
     .help{
         max-width: 768px;
         width: 100%;
@@ -129,7 +129,7 @@
         margin-left: 0;
     }
 }
-@media (max-width: 320px){
+@media (max-width: 500px){
     .help,
     .help-contant{
         height: 745px;
