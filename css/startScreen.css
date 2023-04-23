@@ -2,11 +2,21 @@
 
 .startScreen{
     height: 788px;
-    padding: 4.6875% 3.125% 0;
+    padding: calc(100%*60/1280) calc(100%*40/1280) 0;
     display: flex;
-    justify-content: space-between;
-    background: url(../main/assets/img/start-screen-background.jpg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    background-position: 0 --120px;
+    justify-content: center; /* space-between*/
+    align-items: flex-end;
+    position: relative;
+}
+.startScreen::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -120px;
+    width: 100%;
+    height: calc(100% + 120px);
+    background: url(../../shelter-task/main/assets/svg/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425
+    100%) #211f20;
 }
 .start-screen-content{
     width: 100%;
@@ -88,6 +98,13 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+    }
+}
+@media (max-width: 767px){
+    .startScreen::after{
+        top: -90px;
+        width: 100%;
+        height: calc(100% + 90px);
     }
 }
 @media (max-width: 600px){

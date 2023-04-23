@@ -3,8 +3,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: url(.//../main/assets/svg/start-screen-background.svg), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    background: url(../main/assets/img/start-screen-background.jpg);
 }
 a {
     color: #F1CDB3;
@@ -161,7 +159,7 @@ input{
         align-items: center;
         background: #292929;
         z-index: 1;
-        transition: 0.5 ease-in-out;
+        transition: 0.5s ease-in-out;
     }
     nav ul{  /*тут криво*/
         width: 243px;

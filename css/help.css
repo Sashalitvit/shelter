@@ -42,7 +42,7 @@
 }
 .list .card .icon{
     width: 60px;
-    height: 60px;
+    height: 60px;   /*корректировка*/
 }
 .list .card:nth-child(1){
     width:82px;

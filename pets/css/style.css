@@ -10,3 +10,7 @@ nav ul li:hover a{
 .burger .line{
     border: 1px solid #000000;
 }
+#menu__toggle:checked + label > .line{
+    border:solid 1px #FAFAFA;
+    transition: 0.5s ease-in-out;
+}

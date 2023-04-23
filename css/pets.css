@@ -1,4 +1,8 @@
 /*section PETS*/
+:root{
+    --slider-size: -996px;
+}
+
 .pets {
     height: 877px;
     display: flex;
@@ -21,11 +25,29 @@
 }
 .slider {
     width: 1200px;
+    width: 100%;
     height: 435px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.carusel{
+    overflow: hidden;
+}
+
+.slider-wraper,
+.item_active{
+    max-width: 996px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item_active{
+    flex: 1 0 100%;
+}
+
 .button-arrow:last-child {
     position: relative;
     transform: rotateZ(180deg);
@@ -44,13 +66,13 @@
     width: 270px;
     height: 270px;
 }
-.slider .card:nth-child(2) .slider-foto{
+.slider .card:nth-child(1) .slider-foto{
     background-image: url(../main/assets/img/pets-katrine.png);
 }
-.slider .card:nth-child(3) .slider-foto{
+.slider .card:nth-child(2) .slider-foto{
     background-image: url(../main/assets/img/pets-jennifer.png);
 }
-.slider .card:nth-child(4) .slider-foto{
+.slider .card:nth-child(3) .slider-foto{
     background-image: url(../main/assets/img/pets-woody.png);
 }
 /*.slider-title {
@@ -71,7 +93,7 @@
 }
 
 /* Media */
-@media(max-width: 1281px){
+@media(max-width: 1200px){
     .pets{
          padding-top: calc(100%*80/768);
     }
@@ -80,11 +102,14 @@
          width: 100%;
          height: 697px;
     }
+    .slider-wraper{
+        max-width: 580px;
+       }
     .slider{
          width: 708px;
          height: 435px;
     }
-    .slider .card:nth-child(4){
+    .slider .card:nth-child(3){
          display: none;
     }
  }
@@ -95,7 +120,7 @@
     }
     .pets-contant{
         height: 707px;
-        justify-content: space-between;
+        height: 100%;
     }
     .pets-contant h3{
         width: 300px;
@@ -110,10 +135,10 @@
         justify-content: space-around;
         align-content: space-between;
     }
-    .slider .card:nth-child(3) {
+    .slider .card:nth-child(2) {
         display: none;
     }
-    .slider .card:nth-child(2){
+    .carusel{
         order: -1;
         flex-basis: 100%;
     }
@@ -121,4 +146,27 @@
         justify-content: flex-start;
         row-gap: 30px;
     }
+}
+
+/* for js */
+.center{
+    position: relative;
+    left: var(--slider-size);
+}
+@keyframes move-right {
+    from {left: var(--slider-size);}
+    to {left: calc(var(--slider-size)*2);}
+}
+.transition-right{
+   animation-name: move-right;
+   animation-duration: 2s;
+}
+
+@keyframes move-left {
+    from {left: var(--slider-size);}
+    to {left: 0px;}
+}
+.transition-left{
+   animation-name: move-left;
+   animation-duration: 2s;
 }

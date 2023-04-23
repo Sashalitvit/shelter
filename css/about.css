@@ -61,7 +61,7 @@
         order: 2;
     }
 }
-@media (max-width: 321px){
+@media (max-width: 490px){
     .about{
         height: 974px;
         padding: 0;

@@ -101,6 +101,7 @@ header, main, footer{
     background-image: url(../main/assets/svg/Arrow.svg);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .button-pagination-inactive{
     width: 52px;
