@@ -33,17 +33,37 @@ const PETS_DESCRIBE = {
     },
 };
 
-const modalWindowHTML = `<div class="container-modal-window">
-                            <div class="modal-window_foto"></div>
-                            <div class="modal-window_item">
-                                <h2 class="name"></h2>
-                                <h3 class="type"></h3>
-                                <p class="describe"></p>
-                                <ul class="extra-option">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
+const modalWindowHTML = `
+                        <div class="container-modal-window">
+                            <div class="card-modal-window">
+                                <div class="modal-window_foto"></div>
+                                <div class="modal-window_item">
+                                    <h2 class="name"></h2>
+                                    <h3 class="type"></h3>
+                                    <p class="describe"></p>
+                                    <ul class="extra-option">
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>`;
+                        </div>
+`;
+
+let sectionPets = document.querySelector('.pets');
+const learnMoreBTN = sectionPets.querySelectorAll('.button-secondary');
+
+
+learnMoreBTN.forEach(btn => {
+    btn.addEventListener('click', () =>{
+        let modalWindow = document.createElement('div');
+        modalWindow.classList.add('modal');
+        modalWindow.innerHTML = modalWindowHTML;
+        sectionPets.append(modalWindow);
+        const containerModalWindow = document.querySelector('.container-modal-window')
+        containerModalWindow .classList.add('modal-base');
+        containerModalWindow .classList.add('modal-start');
+    })
+})
