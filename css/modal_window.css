@@ -1,0 +1,190 @@
+.modal{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 5, 5, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 3s ease-in;
+}
+.modal-base{
+    width: 0%;
+    transition: all 3s ease-in;
+}
+.modal-start{
+    flex: 1 0 100%;
+    height: 100%;
+
+    transition: all 3s ease-in;
+}
+.container-modal-window{
+    width: 952px;
+    height: 552px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-modal-window{
+    position: relative;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: #FAFAFA;
+    border-radius: 9px;
+    display: flex;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: calc(100%*29/900);
+}
+.modal-window_foto{
+    width: 500px;
+    height: 500px;
+    background-image: url(../../shelter-task/pets/assets/img/pets-jennifer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.katrine{
+    background-image: url(../../shelter-task/pets/assets/img/pets-katrine.png);
+}
+.charly{
+    background-image: url(../../shelter-task/pets/assets/img/pets-charly.png);
+}
+.freddie{
+    background-image: url(../../shelter-task/pets/assets/img/pets-freddie.png);
+}
+.jennifer{
+    background-image: url(../../shelter-task/pets/assets/img/pets-jennifer.png);
+}
+.scarlett{
+    background-image: url(../../shelter-task/pets/assets/img/pets-scarlett.png);
+}
+.sophia{
+    background-image: url(../../shelter-task/pets/assets/img/pets-sophia.png);
+}
+.timmy{
+    background-image: url(../../shelter-task/pets/assets/img/pets-timmy.png);
+}
+.woody{
+    background-image: url(../../shelter-task/pets/assets/img/pets-woody.png);
+}
+.modal-window_item{
+    width: 351px;
+    height: 362px;
+    color: #000000;
+    margin-top: calc(100%*50/900);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 1px;
+
+}
+.modal h3{
+    width: 145px;
+    height: 45px;
+}
+.modal h4{
+    width: 151px;
+    height: 23px;
+}
+.modal p{
+    width: 350px;
+    height: 102px;
+}
+.closer{
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-image: url(../../shelter-task/main/assets/svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-100%);
+    cursor: pointer;
+}
+.modal-window_item ul{
+    margin-left: 20px;
+}
+.modal-window_item ul li {
+    position: relative;
+}
+.modal-window_item ul li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -20px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #F1CDB3;
+    transform: translateY(-50%);
+}
+@media(max-width: 1200px){
+    .modal{
+        margin-top: calc(-100%*80/768);
+    }
+    .container-modal-window{
+        max-width: 682px;
+        max-height: 482px;
+    }
+    .card-modal-window{
+        max-width: 630px;
+        max-height: 350px;
+        column-gap: calc(100%*11/682);
+    }
+    .modal-window_foto{
+        max-width: 350px;
+        max-height: 350px;
+    }
+    .modal-window_item{
+        max-width: 260px;
+        max-height: 303px;
+    }
+    .modal h3{
+        /* width: 145px; */
+        height: 45px;
+    }
+    .modal h4{
+        /* width: 151px; */
+        height: 23px;
+    }
+    .modal p{
+        max-width: 260px;
+        font-size: 13px;
+        line-height: 110%;
+    }
+}
+@media(max-width: 715px){
+    .modal{
+        margin: 0px;
+
+    }
+    .container-modal-window{
+        max-width: 270px;
+        max-height: 293px;
+
+    }
+    .card-modal-window{
+        max-width: 240px;
+        max-height: 341px;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-window_foto{
+        display: none;
+    }
+    .modal-window_item{
+        max-width: 220px;
+        max-height: 321px;
+    }
+    .modal p{
+        width: 220px;
+        height: 112px;
+    }
+}
