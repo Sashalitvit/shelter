@@ -103,6 +103,18 @@ header, main, footer{
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
+.button-pagination-inactive,
+.button-pagination-active,
+.button-pagination{
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
 .button-pagination-inactive{
     width: 52px;
     height: 52px;
@@ -127,14 +139,11 @@ header, main, footer{
     border-radius: 100px;
     color: #292929;
 }
-.button-pagination-inactive,
-.button-pagination-active,
-.button-pagination{
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 115%;
-    text-align: center;
-    letter-spacing: 0.06em;
+.button-pagination-inactive-2{
+    width: 52px;
+    height: 52px;
+    background: none;
+    border: 2px solid #CDCDCD;
+    border-radius: 100px;
+    color: #CDCDCD;
 }

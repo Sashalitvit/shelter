@@ -11,30 +11,32 @@
 <body>
 
     <header>
-       <a href="../index.html"> <div class="logo">
-            <h3 class="logo-title">Cozy House</h3>
-            <p class="logo-subtitle">Shelter for pets in Boston</p>
-        </div></a>
-        <input type="checkbox" id="menu__toggle">
-        <label for="menu__toggle" class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-        <nav>
-            <ul>
-                <li><a class="paragraph-l" href="#">Our pets</a></li>
-                <li><a class="paragraph-l" href="../index.html">About the shelter</a></li>
-                <li><a class="paragraph-l" href="../index.html#help">Help the shelter</a></li>
-                <li><a class="paragraph-l" href="#">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a href="../index.html"> <div class="logo">
+                <h3 class="logo-title">Cozy House</h3>
+                <p class="logo-subtitle">Shelter for pets in Boston</p>
+            </div></a>
+            <input type="checkbox" id="menu__toggle">
+            <label for="menu__toggle" class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <nav>
+                <ul>
+                    <li><a class="paragraph-l" href="#">Our pets</a></li>
+                    <li><a class="paragraph-l" href="../index.html">About the shelter</a></li>
+                    <li><a class="paragraph-l" href="../index.html#help">Help the shelter</a></li>
+                    <li><a class="paragraph-l" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+
 
 
     </header>
 
     <main class="p2-main">
-        <main>
             <section class="pets" id="pets">
                 <div class="pets-content">
                     <h1>Our friends who are looking for a house</h1>
@@ -120,6 +122,8 @@
         </div>
     </footer>
     <script src="..//../shelter-task/main/app.js"></script>
+    <script src="..//pets/paination.js"></script>
+    <script src="../main/modelWindow.js"></script>
 
 </body>
 </html>
